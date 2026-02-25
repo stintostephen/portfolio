@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stinto Stephen | Creative Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: linear-gradient(-45deg,#1f1c2c,#928dab,#0f2027,#203a43);
+    background-size: 400% 400%;
+    animation: gradientBG 12s ease infinite;
+    color:white;
+}
+
+@keyframes gradientBG{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+    padding:60px 0;
+}
+
+.hero{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:center;
+    gap:50px;
+    margin-top:60px;
+    text-align:center;
+}
+
+.profile-img{
+    width:260px;
+    height:260px;
+    border-radius:50%;
+    object-fit:cover;
+    border:6px solid #ffcc70;
+    box-shadow:0 0 40px rgba(255,204,112,0.6);
+    transition:0.4s;
+}
+
+.profile-img:hover{
+    transform:scale(1.05);
+}
+
+.hero-text h1{
+    font-size:48px;
+}
+
+.hero-text h2{
+    color:#ffcc70;
+    margin:15px 0;
+}
+
+.hero-text p{
+    max-width:600px;
+    margin:auto;
+    line-height:1.7;
+    margin-bottom:30px;
+}
+
+/* SOCIAL */
+.social{
+    margin-top:30px;
+}
+
+.social a{
+    color:white;
+    font-size:24px;
+    margin:0 15px;
+    transition:0.3s;
+}
+
+.social a:hover{
+    color:#ffcc70;
+    transform:translateY(-6px) scale(1.1);
+}
+
+/* SKILLS */
+.skills{
+    margin-top:100px;
+    text-align:center;
+}
+
+.skills h2{
+    margin-bottom:30px;
+}
+
+.skill-box{
+    display:inline-block;
+    margin:12px;
+    padding:12px 22px;
+    background:rgba(255,255,255,0.1);
+    border-radius:25px;
+    backdrop-filter:blur(10px);
+    transition:0.3s;
+}
+
+.skill-box:hover{
+    background:#ffcc70;
+    color:black;
+    transform:scale(1.1);
+}
+
+footer{
+    text-align:center;
+    margin-top:100px;
+    padding:20px 0;
+    opacity:0.7;
+}
+
+@media(max-width:768px){
+    .hero{
+        flex-direction:column;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- HERO -->
+    <section class="hero">
+        <img src="profile.jpg" alt="Stinto Stephen" class="profile-img">
+
+        <div class="hero-text">
+            <h1>Stinto Stephen</h1>
+            <h2>Creative Graphic Designer</h2>
+            <p>
+                I design modern posters, branding visuals, and digital experiences that
+                communicate ideas powerfully. Passionate about storytelling through design.
+            </p>
+
+            <!-- SOCIAL ICONS -->
+            <div class="social">
+                <a href="https://github.com/stintostephen" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://instagram.com/stintostephenn" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/stinto-stephen-580463272" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:stintostephen369@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills">
+        <h2>My Skills</h2>
+        <div class="skill-box">Poster Design</div>
+        <div class="skill-box">Brand Identity</div>
+        <div class="skill-box">Social Media Design</div>
+        <div class="skill-box">Adobe Photoshop</div>
+        <div class="skill-box">Illustrator</div>
+        <div class="skill-box">UI Design</div>
+    </section>
+
+    <footer>
+        © 2026 Stinto Stephen | Designed with Passion
+    </footer>
+
+</div>
+
+</body>
+</html>
